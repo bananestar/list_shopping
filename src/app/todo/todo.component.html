@@ -1,0 +1,20 @@
+<div class="mt-4">
+  <div>
+    <a routerLink="../addTodo">Make a todo-list</a>
+  </div>
+  <div class="mt-4">
+    <h1>List of Todo-list</h1>
+    <ng-container *ngIf="loading$ | async">
+      <div class="overlay"></div>
+      <mat-progress-spinner [mode]="'indeterminate'"></mat-progress-spinner>
+    </ng-container>
+    <ul>
+      <li *ngFor="let list of todoList">
+        <a [routerLink]="['./' + list.id]">{{ list.title }}</a> - <button (click)="removeTodoList(list.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- <button mat-raised-button (click)="loader.show()">Show loader</button>
+
+<button mat-raised-button (click)="loader.hide()">Hide loader</button> -->

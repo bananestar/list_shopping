@@ -1,0 +1,51 @@
+<div class="mt-4">
+  <h1>{{ list.title }}</h1>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Task</th>
+        <th scope="col">is Done?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let todo of todos; let i = index" class="trHover">
+        <td>{{i+1}}</td>
+        <td>{{ todo.title }}</td>
+        <td *ngIf="todo.done === false" (click)="isDone(i, true)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 icon red"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </td>
+        <td *ngIf="todo.done === true" (click)="isDone(i, false)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 icon green"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="sendRequest()">Save</button>
+</div>

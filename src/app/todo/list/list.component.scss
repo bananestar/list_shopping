@@ -1,0 +1,52 @@
+button {
+  margin-top: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ff005a;
+  text-decoration: none;
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 40px;
+  min-width: 164px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  text-align: center;
+}
+button:hover {
+  color: #8400ff;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+}
+
+.table {
+  --bs-table-bg: none;
+  width: 45%;
+}
+
+.trHover:hover {
+  background-color: #ff005a;
+}
+
+.green {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.red {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 58px;
+  margin: 0 0 58px;
+}
+

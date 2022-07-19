@@ -1,0 +1,43 @@
+ul{
+  list-style: none;
+}
+a, button {
+  margin-top: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ff005a;
+  text-decoration: none;
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 40px;
+  min-width: 164px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  text-align: center;
+}
+button{
+  color: red;
+}
+button:hover{
+  border-color: red;
+  background-color: red;
+  color: white;
+}
+a:hover{
+  color: #8400ff;
+}
+mat-progress-spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+h1 {
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 58px;
+  margin: 0 0 58px;
+}

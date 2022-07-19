@@ -1,0 +1,22 @@
+ul{
+  list-style: none;
+}
+a {
+  margin-top: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ff005a;
+  text-decoration: none;
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 40px;
+  min-width: 164px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  text-align: center;
+}
+a:hover {
+  color: #8400ff;
+}
